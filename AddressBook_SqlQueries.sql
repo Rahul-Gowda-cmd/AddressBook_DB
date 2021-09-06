@@ -48,4 +48,42 @@ select * from AddressBook
 
 insert into AddressBook values
 ('Adil','Shaa','House no 212','Tinsukia','Assam',785575,'8748892361','Adil@gmail.com','book2','Friends');
-select * from AddressBook
+select * from 
+
+
+create table Person
+(
+person_id int identity(1,1) primary key not null,
+firstname varchar(50),
+lastname varchar(50),
+email varchar(50),
+phone varchar(50),
+);
+select * from person
+insert into Person values
+('Ragu','ram','ragu@gmail.com','1234567893');
+
+create table Address
+(
+person_id int foreign key references person(person_id),
+zip int primary key,
+city varchar(50),
+state varchar(50),
+);
+
+select * from address
+
+create table Addressbooks
+(
+book_id int primary key,
+person_id int foreign key references person(person_id),
+bookname varchar(50),
+booktype varchar(50),
+);
+
+create table Person_Addressbook
+(
+person_id int foreign key references person(person_id),
+book_id int foreign key references addressbooks(book_id)
+
+);
