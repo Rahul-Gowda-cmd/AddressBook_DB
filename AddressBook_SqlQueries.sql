@@ -20,3 +20,8 @@ create table AddressBook
 ('Akshata','F','4nd cros Indira Nagar','Banglore','MH','80534','1234567896','Akshi@gmail.com'),
 ('Porvi','F','2nd cros Rajaji Nagar','Banglore','Andra','80453','0987654321','Porvi@gmail.com'),
 ('Raja','hsjs','2nd cros Rajaji Nagar','Gadag','Andra','80453','0987654321','Raja@gmail.com');
+
+UPDATE AddressBook
+SET city = 'Trisur', state = 'Kerala'
+WHERE firstname = 'Ravi';
+select * from AddressBook;
