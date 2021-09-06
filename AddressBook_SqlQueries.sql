@@ -28,3 +28,5 @@ select * from AddressBook;
 
 DELETE FROM AddressBook WHERE firstname='Akshata'
 select * from AddressBook
+
+select firstname from AddressBook where city = 'Banglore' OR state = 'Karnataka'
