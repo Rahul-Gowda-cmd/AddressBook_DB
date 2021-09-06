@@ -34,3 +34,8 @@ select firstname from AddressBook where city = 'Banglore' OR state = 'Karnataka'
 select COUNT(firstname) from AddressBook where city = 'Banglore' or state = 'Karnataka'
 
 select * from AddressBook where city = 'Banglore' order by firstname
+
+alter table AddressBook add Addressbookname varchar(20), type varchar(10)
+update AddressBook set Addressbookname='book1', type='Friends' where city='Trisur'
+update AddressBook set Addressbookname='book2', type='Family' where city='Banglore'
+update AddressBook set Addressbookname='book4', type='Profession' where city='Gadag'
