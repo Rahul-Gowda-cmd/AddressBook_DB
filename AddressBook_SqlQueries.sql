@@ -43,3 +43,9 @@ update AddressBook set Addressbookname='book4', type='Profession' where city='Ga
 select count(type) as 'family' from AddressBook where type='family'
 select count(type) as 'friends' from AddressBook where type='friends'
 select count(type) as 'profession' from AddressBook where type='profession'
+
+select * from AddressBook
+
+insert into AddressBook values
+('Adil','Shaa','House no 212','Tinsukia','Assam',785575,'8748892361','Adil@gmail.com','book2','Friends');
+select * from AddressBook
