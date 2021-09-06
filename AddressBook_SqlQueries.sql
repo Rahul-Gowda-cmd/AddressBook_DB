@@ -14,3 +14,9 @@ create table AddressBook
  phonenumber varchar(12) not null,
  email varchar(100) not null
 );
+
+('Rahul ','M','2nd cros Rajaji Nagar','Banglore','Karnataka','58082','8123351458','Rahul@gmail.com'),
+('Ravi ','M','3nd cros Jaya Nagar','Banglore','Gujarat','587682','934747358','Ravi@gmail.com'),
+('Akshata','F','4nd cros Indira Nagar','Banglore','MH','80534','1234567896','Akshi@gmail.com'),
+('Porvi','F','2nd cros Rajaji Nagar','Banglore','Andra','80453','0987654321','Porvi@gmail.com'),
+('Raja','hsjs','2nd cros Rajaji Nagar','Gadag','Andra','80453','0987654321','Raja@gmail.com');
