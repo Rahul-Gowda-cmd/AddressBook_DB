@@ -87,3 +87,13 @@ person_id int foreign key references person(person_id),
 book_id int foreign key references addressbooks(book_id)
 
 );
+alter table person add zip varchar(20)
+
+select p.firstname as "name",  a.city from person p inner join address a on p.zip=a.zip  where a.city='Banglore';
+
+
+select a.city,count(city) as 'citycount' from Address a inner join person p on p.zip=a.zip group by city
+select a.state, count(state) as 'statecount' from Address a inner join person p on p.zip=a.zip group by state
+
+select p.firstname, a.city from person p inner join address a on p.zip=a.zip where city='Banglore' order by (firstname)
+
