@@ -39,3 +39,7 @@ alter table AddressBook add Addressbookname varchar(20), type varchar(10)
 update AddressBook set Addressbookname='book1', type='Friends' where city='Trisur'
 update AddressBook set Addressbookname='book2', type='Family' where city='Banglore'
 update AddressBook set Addressbookname='book4', type='Profession' where city='Gadag'
+
+select count(type) as 'family' from AddressBook where type='family'
+select count(type) as 'friends' from AddressBook where type='friends'
+select count(type) as 'profession' from AddressBook where type='profession'
