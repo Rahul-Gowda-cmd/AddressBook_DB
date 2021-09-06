@@ -25,3 +25,6 @@ UPDATE AddressBook
 SET city = 'Trisur', state = 'Kerala'
 WHERE firstname = 'Ravi';
 select * from AddressBook;
+
+DELETE FROM AddressBook WHERE firstname='Akshata'
+select * from AddressBook
