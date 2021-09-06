@@ -32,3 +32,5 @@ select * from AddressBook
 select firstname from AddressBook where city = 'Banglore' OR state = 'Karnataka'
 
 select COUNT(firstname) from AddressBook where city = 'Banglore' or state = 'Karnataka'
+
+select * from AddressBook where city = 'Banglore' order by firstname
